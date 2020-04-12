@@ -203,6 +203,7 @@ hr {
     position: absolute;
     display: block;
     height: calc(100% + 0.2px);
+    width: 100%;
     opacity: 0.8;
 }
 
