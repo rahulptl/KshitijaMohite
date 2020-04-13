@@ -73,12 +73,13 @@
                         <div class="img-wrap">
 
                             <video width="100%" height="100%" controls autoplay muted>
-								<source src="img/Sanjana/Sanjana.mp4" type="video/mp4">
+                                <source src="img/Sanjana/Sanjana.mp4" type="video/mp4">
+                                    <audio controls autoplay>
+                                        <source src="img/Sanjana/audio.mpeg" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                      </audio>
                               </video>
-                            <audio controls autoplay>
-                                <source src="img/Sanjana/audio.mpeg" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                              </audio>
+
                         </div>
 
                         <button class="content-switch">Read more</button>
@@ -105,7 +106,11 @@
 
                     <div class="slide" data-content="content-13">
                         <div class="img-wrap"><img src="img/Soham/1.jpeg" alt="img8" /></div>
-                        <h2>Soham</h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+
+                    <div class="slide" data-content="content-14">
+                        <div class="img-wrap"><img src="img/Riya/2.jpeg" alt="img8" /></div>
                         <button class="content-switch">Read more</button>
                     </div>
 
@@ -300,7 +305,7 @@
                     <img class="myimage" src="img/Tanishq/3.jpeg"></img>
 
                 </div>
-                <div class="content" data-content="content-7">
+                <div id="Sanjana" class="content" data-content="content-7">
                     <p>쉬투 베프 that's how I saved your number in my contacts. It's the last in the list but the only one I saved with a nick name. Yeah!! Because you are really really special. I still remember kshitu in a beautiful gown with perfect make up
                         and to the point liner in kalra. I was dumb struck! Cuz I barely knew the sequence or even the names of any cosmetics. Sort of envied you and thought that you were out of my league! That day I had no clue that I would be bffs with
                         this gem of a person! I fall short of words to describe millions of memories that we share. So here's just an attempt to let you know what you mean to me! Yes, we became friends due to a lot of funny and silly stuff but the bond
@@ -355,7 +360,7 @@
                     </p>
 
 
-                    <img class="myimage" src="img/Aarohi/1.jpeg"></img>
+                    <img class="myimage" src="img/Aarohi/2.jpeg"></img>
 
                 </div>
 
@@ -400,6 +405,26 @@
 
                 </div>
 
+                <div class="content" data-content="content-14">
+                    <p>
+                        People come n go, many friends change like weather but Sisters are by each others side forever. There is no single but tons of memories we've made with each other since childhood ,especially in our trips n tours which I still cherish. And those are worth
+                        cherishing because you are my cousins. (our group pic) One of the recent n happening moment with you was our visit to Aapli Mumbai. Our first late night "only girls" ride to Juhu was so amazing. It was really a thrill for us. Even
+                        if we were the only two we were enjoying that freedom to ride late night (Juhu pic) ( railway track pic) This was the first n best experience I ever had sitting at the doorstep of the train instead of seats. You gave me that courage
+                        and we finally sat there holding our hands so tight.And we enjoyed such a beautiful view of lonavala ghats with those clouds settled. And there are many more wonderful memories which you have given and I wish we make more soon
+                        in 2020. You are such a person whose presence makes the surrounding so happening and lively. No one can get bored by your company because you are so excited in everything. You have always encouraged us for lot things which we wouldn't
+                        do on our own . Even if we have different taste rather we're whole different like sun n moon but I love you to the moon n back. (childhood pic) You always take efforts to do something special for others but unfortunately we couldn't
+                        do much on your birthday this year . So here's a wish to you Happy Birthday Babe Your wishes will definitely come true. God bless you Lucky charm
+                    </p>
+
+
+
+
+                    <img class="myimage" src="img/Riya/1.jpeg"></img>
+
+                    <img class="myimage" src="img/Riya/3.jpeg"></img>
+
+                </div>
+
 
             </section>
         </div>
@@ -411,6 +436,7 @@
     <script>
         (function() {
 
+            var isSanjana = document.getElementById('overlay')
             var overlay = document.getElementById('overlay'),
                 overlayClose = overlay.querySelector('button'),
                 header = document.getElementById('header')
